@@ -8,7 +8,7 @@ const IntervalHookCounter = () => {
     const interval = setInterval(handleCount, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [count]);
 
   const handleCount = () => {
     console.log(count);
